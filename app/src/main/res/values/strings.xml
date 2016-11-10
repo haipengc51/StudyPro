@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">StudyPro</string>
+    <string name="previous">上一页</string>
+    <string name="next">下一页</string>
+</resources>
