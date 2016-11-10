@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
-    tools:context=".AdapterViewFilpper">
+    tools:context=".AdapterViewFlipper.AdapterViewFilpperActivity">
     <AdapterViewFlipper
         android:id="@+id/adapter_view_flipper"
         android:layout_width="match_parent"

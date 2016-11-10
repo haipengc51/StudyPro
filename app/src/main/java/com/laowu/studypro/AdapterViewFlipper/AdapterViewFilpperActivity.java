@@ -1,10 +1,11 @@
-package com.laowu.studypro;
+package com.laowu.studypro.AdapterViewFlipper;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
+import android.widget.AdapterViewFlipper;
 import android.widget.SimpleAdapter;
+
+import com.laowu.studypro.R;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -14,21 +15,19 @@ import java.util.Map;
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 
-public class StackView extends Activity {
+/**
+ * Created by laowu on 2016/11/7.
+ */
+public class AdapterViewFilpperActivity extends Activity {
     private final static String KEY = "image";
-    @InjectView(R.id.stack_view)
-    android.widget.StackView stackView;
-    @InjectView(R.id.btn_1)
-    Button btn1;
-    @InjectView(R.id.btn2)
-    Button btn2;
-    @InjectView(R.id.btn3)
-    Button btn3;
+
+    @InjectView(R.id.adapter_view_flipper)
+    AdapterViewFlipper adapterViewFlipper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_stack_view);
+        setContentView(R.layout.activity_adapterviewfilpper);
         ButterKnife.inject(this);
         init();
     }
@@ -45,22 +44,6 @@ public class StackView extends Activity {
         }
         SimpleAdapter adapter = new SimpleAdapter(this, items,
                 R.layout.adapter_stack_view, new String[]{KEY}, new int[]{R.id.stack_view_img});
-        stackView.setAdapter(adapter);
-
-        btn1.setOnClickListener(lisen);
-        btn2.setOnClickListener(lisen);
-        btn3.setOnClickListener(lisen);
+        adapterViewFlipper.setAdapter(adapter);
     }
-    private View.OnClickListener lisen = new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            if(v == btn1) {
-                stackView.showPrevious();
-            } else if (v == btn2) {
-
-            } else if (v == btn3) {
-                stackView.showNext();
-            }
-        }
-    };
 }
