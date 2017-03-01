@@ -19,6 +19,15 @@
             android:label="切换view含有动画"/>
         <activity android:name=".AdapterViewFlipper.AdapterViewFilpperActivity"
             android:label="切换view含有动画"/>
+        <activity android:name=".ActionBar.ActionBarActivity"
+            android:label="actionBar相关操作"
+            android:theme="@style/ActionBar"/>
+        <activity android:name=".Bitmap.BitmapActivity"
+            android:label="bitmap显示assat文件"/>
+        <activity android:name=".Matrix.MatrixActivity"
+            android:label="图形的平移、缩放、旋转、倾斜"/>
+        <activity android:name=".Matrix.MoveBackgroundActivity"
+            android:label="背景的移动"/>
     </application>
 
 </manifest>
