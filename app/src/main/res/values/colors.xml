@@ -9,4 +9,8 @@
     <color name="gray">#ffcccccc</color>
     <color name="black">#ff000000</color>
     <color name="white">#ffffffff</color>
+    <color name="bg_ty_gray" >#f7f7f7</color>
+    <color name="text_hide">#323232</color>
+    <color name="view_backgroud">#e6e6e6</color>
+    <color name="text_level">#76c8bc</color>
 </resources>

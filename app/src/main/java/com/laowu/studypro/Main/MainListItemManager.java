@@ -3,6 +3,8 @@ package com.laowu.studypro.Main;
 import com.laowu.studypro.ActionBar.ActionBarActivity;
 import com.laowu.studypro.AdapterViewFlipper.AdapterViewFilpperActivity;
 import com.laowu.studypro.Bitmap.BitmapActivity;
+import com.laowu.studypro.Canvas.CanvasStudyActivity;
+import com.laowu.studypro.Canvas.TestCourseReportActivity;
 import com.laowu.studypro.Matrix.MatrixActivity;
 import com.laowu.studypro.Matrix.MoveBackgroundActivity;
 import com.laowu.studypro.StackView.StackViewActivity;
@@ -33,6 +35,9 @@ public class MainListItemManager {
         items.add(item);
 
         item = new MainListItem("Matrix", "背景的移动", MoveBackgroundActivity.class);
+        items.add(item);
+
+        item = new MainListItem("Canvas", "Canvas自定义控件", TestCourseReportActivity.class);
         items.add(item);
         return items;
     }

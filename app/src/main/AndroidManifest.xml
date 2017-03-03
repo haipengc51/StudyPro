@@ -3,6 +3,7 @@
     package="com.laowu.studypro">
 
     <application
+        android:name=".Appcontext"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -28,6 +29,8 @@
             android:label="图形的平移、缩放、旋转、倾斜"/>
         <activity android:name=".Matrix.MoveBackgroundActivity"
             android:label="背景的移动"/>
+        <activity android:name=".Canvas.TestCourseReportActivity"
+            android:label="Canvas自定义控件"/>
     </application>
 
 </manifest>
